@@ -11,6 +11,7 @@
     "prepush": "npm run test",
     "postinstall": "lerna bootstrap",
     "clean": "lerna exec -- rimraf dist",
+    "dev": "node scripts/develop.js",
     "lint": "tslint -p tsconfig.json --type-check",
     "lint-staged": "lint-staged",
     "test": "jest",
@@ -55,6 +56,7 @@
     "@types/jasmine": "^2.6.0",
     "@types/node": "^8.0.26",
     "@types/sinon": "^2.3.3",
+    "ansi-colors": "^4.1.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^23.6.0",
@@ -81,6 +83,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "gzip-size-cli": "^2.1.0",
     "husky": "^0.14.3",
+    "inquirer": "^7.3.2",
     "is-ci": "^1.0.10",
     "jasmine-core": "^2.8.0",
     "jest": "^23.6.0",
@@ -118,8 +121,9 @@
     "sinon": "^2.3.8",
     "ts-jest": "^23.10.5",
     "ts-loader": "^3.2.0",
-    "tslint": "^5.7.0",
+    "tslint": "5.11.0",
     "typescript": "^3.3.3333",
+    "watchpack": "^1.7.2",
     "webpack": "^3.7.1"
   }
 }
